@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenMafia</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="teenpatti.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="game-text">Teen Patti</h1>
+
+        <table id="gameTable">
+            <thead>
+                <tr>
+                    <th>Bank Loan</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true" class="bank-loan">0</td>
+                    <td class="amount">100</td> <!-- starting amount -->
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="button-group">
+            <button onclick="bet10()">Bet 10</button>
+            <button onclick="addLoan()">Add Loan</button>
+            <button onclick="clearDebt()">Clear Debt</button>
+            
+        </div>
+
+        <div><button id="wonBtn">I WON!</button></div>
+
+    </div>
+
+    <script src="teenpatti.js"></script>
+</body>
+</html>

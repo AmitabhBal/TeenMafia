@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenMafia</title>
+
+    <link rel="stylesheet" href="mafia.css">
+</head>
+<body>
+
+    <div class="container mafia">
+        <h1 class="game-text">Mafia Game</h1>
+
+        <!-- Input field for players -->
+        <div class="input-group">
+            <label for="players">Enter Player Names (comma separated):</label>
+            <input type="text" id="players" placeholder="Enter player names">
+        </div>
+
+        <!-- Role selection checkboxes -->
+        <div class="role-options">
+            <label>
+                <input type="checkbox" value="Healer" class="special-role"> Healer
+            </label>
+            <label>
+                <input type="checkbox" value="Detective" class="special-role"> Detective
+            </label>
+            <label>
+                <input type="checkbox" value="Jester" class="special-role"> Jester
+            </label>
+        </div>
+
+        <!-- Mafia Count Selection (now two checkboxes) -->
+        <div class="role-options mafia-selection">
+            <label>
+                <input type="checkbox" value="Mafia" class="mafia-role"> Mafia
+            </label>
+            <label>
+                <input type="checkbox" value="Mafia" class="mafia-role"> Mafia
+            </label>
+        </div>
+
+        <!-- Button to assign roles -->
+        <button id="assignRolesBtn">Assign Roles</button>
+
+        <!-- Assigned Roles -->
+        <div id="assignedRoles" class="roles-list">
+            <!-- Assigned roles will appear here -->
+        </div>
+
+        <!-- Discussion time -->
+        <div class="discussion-timer">
+            <h2>Discussion Time</h2>
+            <select id="discussionDuration">
+                <option value="30">30 seconds</option>
+                <option value="60">1 minute</option>
+                <option value="120">2 minutes</option>
+            </select>
+            <button id="startTimerBtn">Start Discussion</button>
+            <button id="stopTimerBtn">Stop Timer</button>
+
+            <div id="timerDisplay"></div>
+        </div>
+    </div>
+
+    <script src="mafia.js"></script>
+</body>
+</html>

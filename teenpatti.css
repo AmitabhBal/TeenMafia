@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling - Palette 1 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #14532D; /* Deep Green */
+    color: #F8F9FA; /* Off-White */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* Game Title */
+.game-text {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold */
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #F8F9FA;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #C0392B; /* Rich Red */
+    color: #F8F9FA;
+    font-size: 1.2rem;
+}
+
+td {
+    font-size: 1rem;
+    background-color: #14532D;
+    color: #FFD700;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #FFD700; /* Gold */
+    color: #14532D; /* Deep Green */
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #C0392B; /* Rich Red */
+    color: #F8F9FA;
+}
+
+#wonBtn {
+    margin: 20px;
+    background-color: #FFD700; /* Gold */
+    color: #14532D; /* Deep Green */
+    padding: 12px 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
